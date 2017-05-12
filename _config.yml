@@ -1,0 +1,35 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Melda Dede
+tagline:             Business Intelligence Analyst
+url:                 http://meldadede.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Melda Dede
+  url:               https://twitter.com/meldabayram
+  email:             meldabayram@gmail.com
+
+# Custom vars
+version:             1.0.0
+github:
+  repo:              https://github.com/meldadede
+google_analytics:
+twitter:             meldabayram
+github:              meldadede
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist

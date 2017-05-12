@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="row">
+      <div class="large-12 large-centered columns">
+
+        <header class="masthead">
+          <img src="{{ site.baseurl }}/public/profile.jpg" alt="Jami Gibbs">
+        </header>
+
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="large-6 large-offset-3 columns">
+
+      <div class="content-section">
+
+        <p>
+Hello, there. I’m Melda Dede. I’m a Business Intelligence Analyst at Doğus Teknoloji.
+        </p>
+
+        <p>
+I’m currently helping ETL & Datawarehouse efforts of Doğuş Teknoloji.
+        </p>
+
+      </div>
+
+      <footer>
+        <h2>Contact Me</h2>
+
+        <p>
+        Send me an <a href="mailto:meldabayram@gmail.com?Subject=Hello,%20Melda!">email</a> or ping me on <a href="https://twitter.com/meldabayram">Twitter</a>. I’m also on <a href="https://github.com/meldadede">Github</a>, and <a href="https://www.linkedin.com/in/melda-dede-30583118">Linkedin</a> if you’re into that sort of thing.
+        </p>
+
+        <p class="copyright">
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+        </p>
+      </footer>
+
+    </div>
+
+    <div class="large-2 large-offset-1 columns social">
+      <ul>
+        <li><a href="http://linkedin.com/in/melda-dede-30583118"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a></li>
+        <li><a href="http://medium.com/@meldabayram"><i class="fa fa-medium"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+    {% if site.google_analytics %}
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       ga('create', '{{ site.google_analytics }}', 'auto');
+       ga('send', 'pageview');
+     </script>
+    {% endif %}
+
+  </body>
+</html>
